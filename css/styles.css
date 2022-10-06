@@ -3,9 +3,30 @@
     --text-decoration: #2196F3;
 }
 body {
-    list-style: none;
     background-color: #FFFFFF;
 }
-.nav-studio {
-    color: var();
+.header {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 1600px;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+.hero {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 1600px;
+    height: 600px;
+    background-color: #2F303A;
+}
+.hero-titel {
+    color: #FFFFFF;
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
 }
