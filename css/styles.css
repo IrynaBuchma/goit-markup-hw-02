@@ -1,3 +1,11 @@
+:root {
+   --main-color: #212121;
+    --text-decoration: #2196F3;
+}
 body {
+    list-style: none;
     background-color: #FFFFFF;
+}
+.nav-studio {
+    color: var();
 }
