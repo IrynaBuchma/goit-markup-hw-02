@@ -4,9 +4,8 @@
     --paragraph-color: #757575;
     --accent-color: #FFFFFF;
     --main-accent-color: #000000;
+    --second-font: Raleway, sans-serif;
 }
-/*Header*/
-
 body {
     background-color: var(--accent-color);
     font-family: 'Roboto';
@@ -16,6 +15,39 @@ body {
 }
 .list {
     list-style: none;
+}
+.link:hover, .link:focus {
+   text-decoration: underline; 
+}
+.button, .button-order {
+    font-family: inherit;  
+}
+/*Header*/
+.logo {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    word-spacing: 0.03em;
+}
+.logo-first-part {
+    color: var(--second-color);
+    }
+.logo-last-part {
+    color: var(--main-accent-color);
+    letter-spacing: 0.03em;
+   }
+.nav-list {
+    color: var(--main-color);
+}
+.e-mail {
+    color: var(--second-color);
+}
+.telephone {
+    color: var(--paragraph-color);
 }
 /* WebStudio */
 
@@ -32,3 +64,4 @@ background: #2F303A;
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
+/*Portfolio*/
