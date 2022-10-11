@@ -4,12 +4,14 @@
     --accent-color: #FFFFFF;
     --main-accent-color: #000000;
     --second-font: Raleway, sans-serif;
+    --main-color: #212121;
 }
 body {
     background-color: var(--accent-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #212121;
+    letter-spacing: 0.03em;
 }
 .link {
     text-decoration: none;
@@ -18,7 +20,8 @@ body {
     list-style: none;
 }
 .link:hover, .link:focus {
-   text-decoration: underline var(--second-color); 
+   text-decoration: underline var(--second-color);
+   color: var(--second-color); 
 }
 .button, .button-order {
     font-family: inherit; 
@@ -39,7 +42,6 @@ body {
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 /*Header*/
 .header {
@@ -52,7 +54,6 @@ body {
     font-size: 26px;
     line-height: calc(31/26);
     text-decoration: none;
-    letter-spacing: 0.03em;
 }
 .logo-first-part {
     color: var(--second-color);
@@ -60,11 +61,14 @@ body {
 .logo-last-part {
     color: var(--main-accent-color);
    }
-   .nav-list .link {
+.nav-list .link {
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: #212121;
+}
+.nav-list .link.current {
+    color: var(--second-color);
 }
 .nav-list .link:hover, .nav-list .link:focus  {
     color: var(--second-color);
@@ -88,14 +92,12 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
 }
 .footer-e-mail {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel {
@@ -103,7 +105,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 .address-list .link:hover, .address-list .link:focus {
@@ -153,14 +154,12 @@ cursor: pointer;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
-    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
   .features-list-paragraph {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
     color: var(--paragraph-color);
   }
   /*Our Team*/
@@ -171,20 +170,37 @@ cursor: pointer;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .ourteam-list-paragraph {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--paragraph-color);
 }
 /*Portfolio*/
-.list .link>.portfolio-list-titel {
+.portfolio-list-titel {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
+    color: var(--main-color)
+}
+.portfolio-list-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: var(--paragraph-color);
+}
+.portfolio-list-article {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+    color: var(--main-color);
+}
+.portfolio-list-article:hover,
+.portfolio-list-article:focus {
+    color: var(--accent-color);
+    text-decoration: underline var(--accent-color);
+    background-color: var(--second-color);
 }
