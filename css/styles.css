@@ -17,7 +17,6 @@
 body {
     background-color: var(--accent-color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     color: var(--main-color);
     letter-spacing: 0.03em;
 }
@@ -30,20 +29,28 @@ body {
 .link:hover, .link:focus {
    color: var(--second-color); 
 }
+a {
+    text-decoration: none;
+}
 .button {
     font-family: inherit; 
-    border: none;
+    border-color: transparent;
     font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: inherit;
     background-color: var(--background-color);
     cursor: pointer;
     border-radius: 4px;
 }
 .button:hover, button:focus {
     background-color: var(--second-color);
+    color: var(--accent-color);
+    box-shadow: 0px 3px 1px var(--button-shadow-first), 0px 1px 2px var(--button-shadow-second), 0px 2px 2px var(--button-shadow-third);
 }
 .button-order:hover, .button-order:focus {
     background-color: var(--button-order-active);
-    box-shadow: 0px 3px 1px var(--button-shadow-first), 0px 1px 2px var(--button-shadow-second), 0px 2px 2px var(--button-shadow-third);
 }
 .section-title {
     font-weight: 700;
@@ -137,13 +144,14 @@ background: var(--hero-footer-background);
     letter-spacing: 0.06em;
 }
 .button-order {
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: calc(30/16);
 text-align: center;
 letter-spacing: 0.06em;
 color: var(--accent-color);
-background: var(--second-color);
+background-color: var(--second-color);
 cursor: pointer;
 box-shadow: 0px 4px 4px var(--button-order-shadow);
 border-radius: 4px;
@@ -177,7 +185,7 @@ border-radius: 4px;
 .ourteam {
     background: var(--background-color);
 }
-.ourteam-list {
+.ourteam-item {
     background-color: var(--accent-color);
 }
 .ourteam-list-title {
